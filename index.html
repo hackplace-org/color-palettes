@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Javascript -->
+    <script defer src="/index.js"></script>
+    <!-- Import B612 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <title>Color Palette Generator</title>
+</head>
+
+<body>
+    <!-- Extension Title -->
+    <div style="height: 20%;">
+        <h1>COLOR PALETTE GENERATOR</h1>
+    </div>
+
+    <!-- Color Palette Display -->
+    <div style="height: 60%;">
+        <div id="color-palette"></div>
+    </div>
+
+    <!-- Generate Palette Button -->
+    <div style="height: 20%;">
+        <input type="number" id="num-colors" name="num-colors" min="1" max="10" value="4">
+        <button id="gen-pal" onclick="genColors()">GENERATE PALETTE</button>
+    </div>
+</body>
+
+</html>
