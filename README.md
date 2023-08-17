@@ -11,4 +11,4 @@
 
 ## Functionality
 - Input number field for amount of colors
-- Click "GENERATE PALETTE" button to the palette
+- Click "GENERATE PALETTE" button to generate the palette
