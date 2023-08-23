@@ -1,14 +1,6 @@
 # hack.place() Sample Project
 
-## Color Palette Chrome Extension
-### Randomly generate a color palette from 1-6 colors
+> **Important**
+> This project requires a Chromium-based browser. such as [Chrome](https://www.google.com/chrome/), [Edge](https://www.microsoft.com/en-us/edge), or [Brave](https://brave.com/download/)
 
-## To test on your device
-1. Go to [chrome://extensions](chrome://extensions) in your Google Chrome browser
-2. Check the "Developer mode" checkbox in the top right-hand corner
-3. Click “Load Unpacked”
-4. Select the forked repo directory
-
-## Functionality
-- Input number field for amount of colors
-- Click "GENERATE PALETTE" button to generate the palette
+This code accompanies the _Intro to Chrome Extensions_ workshop for **hack.place()**. For a step-by-step guide on how to create this app, please reference the accompanying presentation.
