@@ -1,0 +1,41 @@
+name: Estimate hours
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+permissions:
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install cargo-binstall
+        uses: cargo-bins/cargo-binstall@main
+
+      - name: Install gitoxide
+        run: yes | cargo-binstall gitoxide
+
+      - name: Estimate hours
+        run: echo "$(ein tool estimate-hours)" > .dev_hours
+
+      - name: Add log file
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .dev_hours
+
+      - name: Commit log file
+        run: "git commit -m 'chore: Estimate potential development hours'"
+
+      - name: Push commit
+        run: git push
