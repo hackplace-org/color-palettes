@@ -1,4 +1,4 @@
-# Color Palette Generator
+# Color Palettes
 
 > **Important**
 > This project requires a Chromium-based browser such as [Chrome](https://www.google.com/chrome/), [Edge](https://www.microsoft.com/en-us/edge), or [Brave](https://brave.com/download/).
